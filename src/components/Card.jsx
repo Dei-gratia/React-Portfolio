@@ -1,10 +1,9 @@
-import 'card.css'
-import { Children } from 'react'
+import './card.css'
 
-const Card = (props) => {
+const Card = ({children, className, onClick}) => {
   return (
-	<article className='card'>
-	 {props.children}
+	<article className={`card ${className}`} onClick={onClick}>
+	 {children}
 	</article>
   )
 }

@@ -1,6 +1,7 @@
 import Logo from '../../assets/logo.png'
 import data from './data'
-import { IoIosColorPalette } from "react-icons/io";
+import { MdDarkMode } from "react-icons/md";
+import { IoSunnyOutline } from "react-icons/io5";
 import './navbar.css'
 
 
@@ -16,7 +17,7 @@ const Navbar = () => {
 				data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
 			}
 		</ul>
-		<button id='theme__icon'><IoIosColorPalette /></button>
+		<button id='theme__icon'><MdDarkMode /></button>
 	</div>
 	</nav>
   )
